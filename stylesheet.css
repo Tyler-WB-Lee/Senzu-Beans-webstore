@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background: #FFD7C1;
+  }
+  /* website container */
+  .site-cont {
+    max-width: 960px;
+    margin: auto;
+    background: #87ceeb;
+    margin-top: px;
+    border-radius: 7px;
+    
+  }
+  
+  /* form */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+  
+  input[type="email"] {
+    border: 3px solid grey;
+    border-radius: 4px;
+    background: #fae327;
+    font-size: 1em;
+    padding: 10px;
+  }
+  
+  input[type="submit"] {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    border: 0;
+    border-radius: 4px;
+    font-family: 'Seymour One', sans-serif;
+    text-shadow: 1px 1px 1px #fae327;
+  }
+  
+  input[type="submit"]:hover {
+    background: #F85B1A;
+    transition: linear 0.15s;
+  }
+  
+  /* navigation bar -- Attempt to make fixed nav-bar for desktop sized displays 
+  
+  #nav-bar {
+  }
+  
+  */
+  
+  
+  .brand-logo {
+    max-width: 100%;
+  }
+  
+  .flex-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .flex-cont li {
+    flex: 1;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 1.5em;
+    list-style-type: none;
+    text-align: center;
+    align-self: center;
+  }
+  
+  
+  .flex-cont .brand-img {
+    flex-grow: 2;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fae327;
+    text-shadow: 3px 1px  1px black, -3px 1px 1px black, 1px 3px 1px black, -1px -3px 1px black;
+    font-style: italic;
+  }
+  
+  /* font awesome / flex styling for about */
+  .flex-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .about-icon {
+    font-size: 3em;
+    color: #fae327;
+    padding: 10px 50px 10px 10px;
+    
+  }
+  
+  .flex-about p {
+    text-align: center;
+    font-family: monospace ,sans-serif;
+    font-size: 1em;
+  }
+  
+  
+  /* video - iframe section */
+  h2 {
+    text-align: center;
+    color: #fae327;
+    text-shadow: 1px 1px  1px black, -1px 1px 1px black, 1px 1px 1px black, -1px -1px 1px black;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 1.5em;
+    padding-top: 20px;
+  }
+  
+  iframe {
+    max-width: 560px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+   
+  }
+  
+  .video-cont{
+    justify-content: center;
+  }
+  
+  /* pricing */
+  
+  h3, h4 {
+    text-align: center;
+    background: #87ceeb;
+    text-align: center;
+    color: #fae327;
+    text-shadow: 1px 1px  1px black, -1px 1px 1px black, 1px 1px 1px black, -1px -1px 1px black;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 1.5em;
+  }
+  
+  .flex-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .senzu-img {
+    max-width: 200px;
+    max-height: 150px;
+    margin: auto;
+  }
+  
+  .buy-senzu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid #072083;
+    border-radius: 4px;
+    width: 260px;
+    height: 400px;
+    background: #fae327;
+    margin-bottom: 20px
+  }
+  
+  .buy-senzu:hover {
+    border: 3px solid #F85B1A;
+    box-shadow: black;
+  }
+  
+  .purchase {
+    display: flex;
+    justify-content: center; 
+    margin: 20px;
+  }
+  
+  .buy {
+    width: 100px;
+    height: 30px;
+    background: #87ceeb;
+    border: 0;
+    border-radius: 4px;
+    font-family: 'Seymour One', sans-serif;
+    text-shadow: 1px 1px 1px #fae327;
+  }
+  
+  .buy:hover {
+    background: #F85B1A;
+    transition: linear 0.15s;
+  }
+  
+  /* footer */
+  
+  footer {
+      padding: 10px 5px;
+      margin-top: 30px;
+      background-color: #45a1ff;
+      color: #fff;
+  }
+  
+  /* wraps navbar and makes each li element take up 100%  449px due to not knowing how to center list items
+     change to 600px when figure it out. */
+  
+  @media all and (max-width: 600px) {
+    body{
+      background: #87ceeb;
+    }
+    
+    .flex-cont {
+      flex-wrap: wrap;
+      margin: auto;
+    }
+    
+    .flex-cont li {
+      flex-basis: 100%
+    }
+    
+    .about-icon {
+      margin: auto;
+    }
+    
+    .flex-about p {
+    text-align: center;
+  }
+    .flex-price {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+    .buy-senzu {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  
